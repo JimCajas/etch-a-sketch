@@ -1,5 +1,5 @@
 .grid-container{
-    min-width: 48rem;
+    width: 40rem;
     background-color: darkgreen;
     display: flex;
     flex-wrap: wrap;
