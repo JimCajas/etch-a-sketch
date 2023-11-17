@@ -1,6 +1,7 @@
 // Create a grid
-let gridBlock = 256;
-for (let i = 1; i <= gridBlock; i++) {
+const canvasDot = 16
+let squares = canvasDot*canvasDot;
+for (let i = 1; i <= squares; i++) {
     const gridItem = document.createElement("div");
     gridItem.className = "grid-item";
     const container = document.querySelector(".grid-container");
