@@ -26,24 +26,27 @@ button{
     border-style: none;
 }
 
-.grid-container{
+.container {
     width: 40rem;
     height: 40rem;
     background-color: darkgreen;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: stretch;
-    align-content: stretch;
-    gap: 0.25rem;
-    padding: 1rem;
     margin-top: 2.5rem;
-
 }
 
+.grid {
+    display: flex;
+    padding:0.25rem;
+    }
+
+.column {
+    flex: 1;
+    
+}
 
 .grid-item{
     background-color: cornsilk;
-    max-width: 0.5rem;
-    max-height: 0.5rem;
-    flex-grow: 1;
+    height: 2rem;
+    margin: 0.5rem;
+
+
 }
