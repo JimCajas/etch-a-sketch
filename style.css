@@ -28,25 +28,28 @@ button{
 
 .container {
     width: 40rem;
-    height: 40rem;
+    height: auto;
     background-color: darkgreen;
     margin-top: 2.5rem;
+    display: flex;
 }
 
 .grid {
     display: flex;
-    padding:0.25rem;
+    padding: 2.5rem;
+    margin: auto;
     }
 
 .column {
-    flex: 1;
+    flex: none;
     
 }
 
 .grid-item{
     background-color: cornsilk;
-    height: 2rem;
-    margin: 0.5rem;
+    height: 0.25rem;
+    width: 0.25rem;
+    margin: 0.05rem;
 
 
 }

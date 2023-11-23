@@ -1,7 +1,7 @@
 // Create a grid
 
-const gridCols = 8;
-const gridRows = 10;
+const gridCols = 100;
+const gridRows = 100;
 
 const grid = document.createElement("div");
 grid.className = "grid";
