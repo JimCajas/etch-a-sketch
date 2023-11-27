@@ -1,6 +1,3 @@
-
-
-
 // Ask how big the canvas should be
 let gridCols = prompt("Please enter the number of squares per side for the sketch pad. Max. 100", 64);
 if (gridCols > 100){
@@ -22,9 +19,12 @@ if (gridCols > 100){
             gridItem.className = "grid-item";
             column.appendChild(gridItem);
             
+            // Generate a random color
+            const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+              
             // Draw with a mouse movement
             gridItem.addEventListener("mouseenter", () => {
-            gridItem.style.backgroundColor = "#ff4500";
+            gridItem.style.backgroundColor = randomColor;
             })    
         }
         grid.appendChild(column);
@@ -59,9 +59,12 @@ if (gridCols > 100){
         gridItem.className = "grid-item";
         column.appendChild(gridItem);
         
+        // Generate a random color
+        const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
         // Draw with a mouse movement
         gridItem.addEventListener("mouseenter", () => {
-        gridItem.style.backgroundColor = "#ff4500";
+        gridItem.style.backgroundColor = randomColor;
         })    
         }
         grid.appendChild(column);
